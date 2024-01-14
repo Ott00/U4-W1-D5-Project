@@ -1,11 +1,9 @@
 package it.epicode.be.classi;
 
-import it.epicode.be.interfaces.Luminosita;
-
-public class Regolabile implements Luminosita {
+public class Luminosita implements it.epicode.be.interfaces.Luminosita {
     private int luminosita = 100;
 
-    public Regolabile() {
+    public Luminosita() {
     }
 
     @Override

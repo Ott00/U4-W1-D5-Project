@@ -1,11 +1,11 @@
 package it.epicode.be.elementiMultimediali;
 
 import it.epicode.be.abstractClass.ElementoMultimediale;
-import it.epicode.be.classi.Regolabile;
+import it.epicode.be.classi.Luminosita;
 
 public class Immagine extends ElementoMultimediale {
 
-    private Regolabile luminosita = new Regolabile();
+    private Luminosita luminosita = new Luminosita();
 
     public Immagine(String titolo) {
         super(titolo);
@@ -19,11 +19,11 @@ public class Immagine extends ElementoMultimediale {
         System.out.println("\n");
     }
 
-    public Regolabile getRegolabile() {
+    public Luminosita getLuminosita() {
         return luminosita;
     }
 
-    public void setRegolabile(Regolabile regolabile) {
-        this.luminosita = regolabile;
+    public void setLuminosita(Luminosita luminosita) {
+        this.luminosita = luminosita;
     }
 }

@@ -14,16 +14,22 @@ public class Audio extends ElementoMultimediale {
         this.durata = durata;
     }
 
+//    public void play() {
+//        for (int i = 0; i < durata; i++) {
+//            System.out.print(getTitolo());
+//            for (int j = 0; j < riproducibile.getVolume(); j++) {
+//                if (j == riproducibile.getVolume() - 1) {
+//                    System.out.println("!");
+//                } else {
+//                    System.out.print("!");
+//                }
+//            }
+//        }
+//    }
+
     public void play() {
         for (int i = 0; i < durata; i++) {
-            System.out.print(i + 1 + " " + getTitolo());
-            for (int j = 0; j < riproducibile.getVolume(); j++) {
-                if (j == riproducibile.getVolume() - 1) {
-                    System.out.println("!");
-                } else {
-                    System.out.print("!");
-                }
-            }
+            System.out.println(getTitolo() + "!".repeat(riproducibile.getVolume()));
         }
     }
 
